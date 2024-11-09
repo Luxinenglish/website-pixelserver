@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #FF5151;
+  --primary-color-rgb: 255, 81, 81;
+  --secondary-color: #FF5151;
+  --secondary-color-rgb: 255, 81, 81;
+  --tertiary-color: #FF5151;
+  --tertiary-color-rgb: rgba(255, 81, 81, 1.0);
+}

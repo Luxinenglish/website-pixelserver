@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/fav.png" type="image/gif" sizes="16x16">
+    <link rel="manifest" href="assets/assets/favicon/site.webmanifest">
+    <title>Nekohost - GameHub</title>
+    <style>
+        body {
+            background-color: #1E1E1E; /* Dark background */
+            color: #EAEAEA; /* Light text for contrast */
+            font-family: 'Arial', sans-serif; /* Modern font */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* Centering content vertically */
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        h1 {
+            font-size: 3em; /* Increased font size for prominence */
+            margin-bottom: 30px;
+            color: #CF5E5E; /* Accent color */
+            text-align: center;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Soft shadow for depth */
+        }
+    
+        .top-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 12px 20px;
+            background-color: #CF5E5E; /* Button color */
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px; /* More rounded corners */
+            font-size: 1em; /* Increased font size */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+    
+        .top-button:hover {
+            background-color: #B94A4A; /* Darker shade for hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+        }
+    
+        .top-button:active {
+            background-color: #A23939; /* Even darker shade for active state */
+            transform: translateY(0); /* Return to original position */
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Reduced shadow */
+        }
+    
+        .game-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 30px; /* Increased gap for better spacing */
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 20px; /* Margin from the top */
+        }
+    
+        .game-card {
+            background-color: #2A2A2A; /* Darker card color */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+        }
+    
+        .game-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+        }
+    
+        .game-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* More rounded corners */
+            margin-bottom: 15px;
+        }
+    
+        .game-card h2 {
+            margin: 10px 0;
+            font-size: 1.5em; /* Larger font for titles */
+            color: #EAEAEA; /* Light color for game titles */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+        }
+    
+        .game-card button {
+            border-radius: 8px; /* More rounded corners */
+            border: none;
+            background-color: #CF5E5E; /* Button color */
+            color: #FFFFFF;
+            padding: 12px 25px; /* Increased padding */
+            font-size: 1em; /* Increased font size */
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        }
+    
+        .game-card button:hover {
+            background-color: #B94A4A; /* Darker shade for hover */
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Enhanced shadow */
+        }
+    
+        .game-card button:active {
+            background-color: #A23939; /* Even darker shade for active state */
+            transform: translateY(0); /* Return to original position */
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5); /* Reduced shadow */
+        }
+    </style>    
+</head>
+<body>
+    <button class="top-button" onclick="window.location.href='https://nekohost.fr'">Retourner au site</button>
+    <h1>Bienvenue sur le Hub de jeux</h1>
+    <div class="game-container">
+        <div class="game-card" onclick="window.location.href='game/calculatrice'">
+            <h2>Calculatrice</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/chromedino'">
+            <h2>Chrome Dino</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/Evilglitch'">
+            <h2>Evil Glitch</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/Square'">
+            <h2>Black Hole Square</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/RetroHaunt'">
+            <h2>Retrohaunt</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/Konekt'">
+            <h2>Konekt</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/chroma'">
+            <h2>The Chroma Incident</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/tetris'">
+            <h2>Tetris</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/memory'">
+            <h2>Memory</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/2048'">
+            <h2>2048</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/1v1.lol'">
+            <h2>1v1 Lol</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/flappybird'">
+            <h2>Flappy Bird</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/dooblejump'">
+            <h2>Dooble Jump</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/geometrydash'">
+            <h2>Geometry Dash</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/connect3'">
+            <h2>Connect 3</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/xx142b2'">
+            <h2>xx142b2</h2>
+            <button>Jouer</button>
+        </div>
+        <div class="game-card" onclick="window.location.href='game/hextris'">
+            <h2>Hextris</h2>
+            <button>Jouer</button>
+        </div>
+    </div>
+</body>
+</html>
