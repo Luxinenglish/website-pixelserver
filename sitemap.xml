@@ -15,4 +15,11 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <!-- URL principale du discord -->
+    <url>
+        <loc>https://www.pixelserver.fr/Discord.html</loc>
+        <lastmod>2024-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 </urlset>
